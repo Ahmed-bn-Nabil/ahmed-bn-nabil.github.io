@@ -1,0 +1,37 @@
+<!-- run by a local host -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Clicker</title>
+</head>
+<body>
+    <ul id="cat-list"></ul>
+<!--http://knockoutjs.com/documentation/with-binding.html
+    http://knockoutjs.com/documentation/binding-context.html -->
+        <div id="cat" data-bind="with: currentCat">
+
+        <!-- (h2 hooked up to the name property) h2 text shold be the value of the (name) property in our model. do it by data-bind="text: prpertyHere" -->
+        <!-- we removed the currentCat() becase we moved the biding-cotext from the ViewModel to the currentCat by with line-11 -25-->
+        <h2 data-bind="text: name"></h2>
+        <h3 data-bind="text: title"></h3>
+        <div data-bind="text: clickCount"></></div>
+        <!-- $parent becase currentCat dosn't have incrementCounter func it is it's parent-ViewModel- -->
+        <img src="" alt="cute cat" data-bind="click: $parent.incrementCounter, attr: {src: imgSrc}">
+
+    <ul data-bind="foreach: nicknames">
+        <!-- use $data when not an array of objects, if thou just use the property name -->
+        <li data-bind="text: $data"></li>
+    </ul>
+    </div>
+    <!-- will make an li for evry item in catList -->
+    <ul data-bind="foreach: catsList">
+        <!-- click passing a “current item” as a parameter and more-->
+        <!-- $parent is for geting out of the current binding context -cat- to its parent -ViewModel- -->
+        <li data-bind="text: name, click: $parent.changeCurrentCat"></li>
+    </ul>
+    <script src="js/libs/knockout-3.2.0.js"></script>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

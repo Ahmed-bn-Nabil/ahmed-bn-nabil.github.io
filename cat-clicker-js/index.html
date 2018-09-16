@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cat clicker app</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<ul id="cats-list">
+	</ul>
+	<div id="cat-frame">
+	</div>
+	<button id="admin-btn">admin</button>
+	<div id="admin" class="hidden">
+	<input id="name">
+	<input id="src">
+	<input id="clicks">
+	<button id="save">save</button>
+	<button id="cancel">cancel</button>
+	</div>
+	<script type="text/template" data-template="cat-template">
+		<p>%name%</p>
+		<img src="%src%" alt "a cat image">
+		<p>%clicks%</p>
+	</script>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

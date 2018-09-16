@@ -1,0 +1,56 @@
+/** {
+    border: 1px solid red !important;
+}*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* header */
+.header {
+    border-bottom: 5px solid #c5e4f7;
+
+}
+
+.header-logo {
+    max-width: 150px;
+    max-height: 150px;
+    
+}
+
+.header-text {
+    text-align: right;
+}
+
+/* gallery */
+
+.projects-header {
+    margin-left: 3%;
+}
+
+.middle {
+    margin: 0 auto;
+}
+
+a {
+    display: block;
+}
+
+@media only screen and (max-width: 500px) {
+	p {
+		display: none;
+	}
+}
