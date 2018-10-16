@@ -3,31 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>card</title>
+	<link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
 	<style>
 
-	/*body {
-			background: url(http://i.imgur.com/k8BtMvj.jpg);
-			background-size: cover;
-		}
-		.card {
-			position: relative;
-			height: 610px;
-			width: 580px;
-			margin: 0 auto;
-			overflow: hidden;
-			padding: 20px;
-			text-align: center;
-		}
-		.card:after {
-			content: '';
-			position: absolute;
-			width: 1100%; height: 1100%;
-			top: 20px; right: -500%;
-			background: rgba(255,255,255,.8);
-			transform-origin: 54% 0;
-			transform: rotate(45deg);
-			z-index: -1;
-		}*/
 		:root {
 			--background: #ddd;
 		}
@@ -36,8 +14,8 @@
 			box-sizing: border-box;
 		}
 
-
 		body {
+			font-family: 'Changa', sans-serif;
 			background: #fff;
 			background: var(--background, #fff);
 		}
@@ -70,7 +48,7 @@
 		    width: 100%;
         	-webkit-transition: transform 0.2s; /* Safari */
     		transition: transform 0.2s;
-    		font-size: 32px;
+    		font-size: 24px;
 		}
 
 		.card_body:hover {
@@ -83,7 +61,7 @@
 			height: 50%;
 			background: #555;
 			width: 100%;
-			margin-bottom: -8px;
+			margin-bottom: -15px;
 		}
 
 
@@ -114,6 +92,7 @@
 			width: 45px;
 			height: 45px;
 			opacity: 0.9;
+			cursor: pointer;
 		}
 
 		.card_body_top-icons_left_heart {
@@ -125,20 +104,18 @@
 			width: 45px;
     		height: 45px;
     		opacity: 0.7;
-		}
-
-		.card_body_top-icons_left_heart:active,.card_body_top-icons_left_heart:visited {
-			background: url(icons/like1.png);
+    		cursor: pointer;
 		}
 
 		.card_body_top-icons_right {
-			position: absolute;
-			right: 0;
-			overflow: hidden;
-			padding: 7px 10px 7px 30px;
-			text-align: center;
-			color: #fff;
-			z-index: 2;
+		    position: absolute;
+		    right: 0;
+		    overflow: hidden;
+		    padding: 0px 10px 0px 30px;
+		    text-align: center;
+		    color: #fff;
+		    z-index: 2;
+		    font-size: 32px;
 		}
 
 		.card_body_top-icons_right:before {
@@ -166,15 +143,18 @@
 		.card_body_text_header {
 		    line-height: 50px;
 		    padding: 10px 0;
+		    font-size: 30px;
+		    overflow: auto;
 		}
 
 		.card_body_text_header_price {
 			font-weight: 800;
+    		font-size: 35px;
 		}
 
 		.card_body_text_header_bed {
 			border: 2px solid #0b2b66;
-		    padding: 3px 8px;
+		    padding: 0 8px;
 		    border-radius: 10px;
 		}
 
@@ -255,6 +235,12 @@
 
 
 
+		.card_body_bot-a,
+		.card_body_bot-a:active,
+		.card_body_bot-a:visited {
+			text-decoration: none;
+		}
+
 		.card_body_bot {
 			line-height: 50px;
 			background: #264585;
@@ -278,7 +264,7 @@
 			<img srcset="pic.jpg" class="card_body_pic">
 			<div class="card_body_text">
 				<div class="card_body_text_header">
-					يبدأ <span class="card_body_text_header_bed">1+1 <span class="card_body_text_header_bed_i"></span></span> من <span class="card_body_text_header_price">47,000 $</span>
+					تبدأ <span class="card_body_text_header_bed">1+1 <span class="card_body_text_header_bed_i"></span></span> من <span class="card_body_text_header_price">47,000 $</span>
 				</div>
 				<div class="card_body_text_mid-text">
 					مجمع استثماري قيد الإنشاء وقرب محطة المترو في اسطنبول الأوروبية في منطقة بهشة شهير.
@@ -298,7 +284,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card_body_bot">التفاصيل</div>
+			<a href="#" class="card_body_bot-a"><div class="card_body_bot">التفاصيل</div></a>
 		</div>
 	</div>
 <a href="icons-credit.html">icons-credit</a>
