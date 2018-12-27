@@ -100,8 +100,9 @@ body {
 }
 
 .skills_list {
-	text-align: center;
-	padding: 0;
+    text-align: center;
+    padding: 0;
+    line-height: 2.2;
 }
 .skills_skill {
 	display: block;
