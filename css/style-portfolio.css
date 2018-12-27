@@ -49,6 +49,11 @@ a {
     display: block;
 }
 
+/* skills */
+.skills_list {
+    text-align: center;
+}
+
 @media only screen and (max-width: 500px) {
 	p {
 		display: none;
