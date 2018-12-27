@@ -99,6 +99,9 @@ body {
     box-shadow: 0px 38px 22px -36px rgba(0,0,0,0.2);
 }
 
+.skills_list {
+	text-align: center;
+}
 .skills_skill {
 	display: block;
     margin: 15px 0;
